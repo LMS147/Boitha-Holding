@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Sitemap: https://www.boitha.co.za/sitemap.xml
+
+# Crawl delay for search engines
+Crawl-delay: 10

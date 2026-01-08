@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Author - & YET SHE BECAME by Lerato Mtolo | BOITHA HOLDINGS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Purchase '& YET SHE BECAME' by Lerato Mtolo. An inspirational story of resilience and transformation from the founder of BOITHA HOLDINGS."
+    />
+    <meta
+      name="keywords"
+      content="& YET SHE BECAME, Lerato Mtolo book, inspirational book, leadership book, motivational book"
+    />
+    <meta name="author" content="Lerato Boitha" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/author.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="header-left">
+          <img
+            src="./images/logo.jpg"
+            alt="Boitha Holdings Logo"
+            class="header-logo"
+          />
+        </div>
+
+        <div class="header-center">
+          <h1>BOITHA HOLDINGS</h1>
+          <p>Transforming Minds, Changing Lives</p>
+        </div>
+
+        <div class="header-right">
+          <img
+            src="./images/ICAN.jpeg"
+            alt="ICAN Certification"
+            class="header-cert"
+          />
+        </div>
+      </div>
+    </header>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav>
+      <ul id="navigation">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./author.html" class="active">Book</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>& YET SHE BECAME</h2>
+        <div style="text-align: center; margin-bottom: 40px">
+          <img
+            src="./images/& yet she became banner.PNG"
+            alt="& YET SHE BECAME Book Banner - Inspirational Story of Resilience"
+            style="
+              max-width: 100%;
+              height: auto;
+              border-radius: 10px;
+              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            "
+          />
+        </div>
+
+        <div class="card" style="margin-bottom: 40px">
+          <h3>Inspiration Behind her Book</h3>
+          <p>
+            Amongst some of her Talents, She has over 13yrs experience in the
+            Speaking Industry. On bookings she is an Inspirational Speaker,
+            Leadership Facilitator and a life coach.
+          </p>
+          <p>
+            Her enthusiasm is inspired by her True-Life Changing Story where she
+            faced tragedies at age 17. As a resilience to all she has been
+            through it led her to AUTHOR her first book titled "& YET SHE
+            BECAME". But above all adversities, she is living her life
+            positively.
+          </p>
+
+          <div style="text-align: center; margin: 30px 0">
+            <img
+              src="./images/&yet she became.PNG"
+              alt="& YET SHE BECAME Book Cover - Available for Purchase"
+              style="
+                max-width: 300px;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              "
+            />
+          </div>
+
+          <div style="text-align: center; margin-top: 30px">
+            <button
+              class="btn-book"
+              onclick="showBookPurchaseForm()"
+              style="font-size: 18px; padding: 15px 40px"
+            >
+              Purchase Book Now - R249
+            </button>
+          </div>
+        </div>
+
+        <!-- Book Purchase Form -->
+        <div id="bookPurchaseForm" class="booking-form">
+          <h3 style="color: #1a237e; margin-bottom: 30px">
+            Purchase "& YET SHE BECAME"
+          </h3>
+
+          <form id="bookOrderForm" class="purchase-form">
+            <!-- Quantity -->
+            <div class="form-group">
+              <label for="bookQuantity">Number of Books *</label>
+              <input
+                type="number"
+                id="bookQuantity"
+                min="1"
+                max="50"
+                placeholder="Enter quantity (1–50)"
+                required
+              />
+            </div>
+
+            <!-- Total -->
+            <div class="total-box">
+              <span>Total Amount</span>
+              <strong>R <span id="bookTotalAmount">0</span></strong>
+              <small>R249 per book</small>
+            </div>
+
+            <!-- Delivery Option -->
+            <div class="form-group">
+              <label>Delivery Method *</label>
+              <div class="radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="deliveryMethod"
+                    value="delivery"
+                    required
+                  />
+                  Courier Delivery
+                </label>
+                <label>
+                  <input type="radio" name="deliveryMethod" value="pickup" />
+                  Collect at Office
+                </label>
+              </div>
+            </div>
+
+            <!-- Address (delivery only) -->
+            <div class="form-group" id="deliveryAddress">
+              <label for="bookAddress">Delivery Address *</label>
+              <textarea
+                id="bookAddress"
+                rows="3"
+                placeholder="Street, City, Province, Postal Code"
+              ></textarea>
+            </div>
+
+            <!-- Customer Info -->
+            <h4>Customer Details</h4>
+
+            <div class="form-group">
+              <label for="bookFullName">Full Name *</label>
+              <input type="text" id="bookFullName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="bookEmail">Email *</label>
+              <input type="email" id="bookEmail" required />
+            </div>
+
+            <div class="form-group">
+              <label for="bookPhone">Phone *</label>
+              <input type="tel" id="bookPhone" required />
+            </div>
+
+            <!-- Payment -->
+            <h4>Payment Method</h4>
+
+            <div class="radio-group">
+              <label>
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  value="online"
+                  required
+                />
+                Pay Online
+              </label>
+              <label>
+                <input type="radio" name="paymentMethod" value="bank" />
+                Bank Transfer
+              </label>
+            </div>
+
+            <!-- Bank details -->
+            <div id="bankDetails" class="bank-box">
+              <p><strong>Bank:</strong> Standard Bank</p>
+              <p><strong>Account:</strong> Boitha Holdings</p>
+              <p><strong>Account No:</strong> 0123456789</p>
+              <p><strong>Reference:</strong> Your name</p>
+            </div>
+
+            <!-- Terms -->
+            <div class="form-group checkbox">
+              <label>
+                <input type="checkbox" id="terms" required />
+                I agree to the terms and conditions
+              </label>
+            </div>
+
+            <button type="submit" class="btn-submit">Complete Order</button>
+          </form>
+
+          <div
+            id="bookSuccessMessage"
+            class="success-message"
+            style="display: none"
+          >
+            <strong>Thank you for your purchase!</strong>
+            <p>
+              Your order for <span id="orderedQuantity">0</span> copy(ies) of "&
+              YET SHE BECAME" has been received.
+            </p>
+            <p>
+              A confirmation email has been sent to your inbox. Lerato will
+              personally sign your book(s) before shipping.
+            </p>
+            <p>
+              <strong>Order Reference:</strong>
+              <span id="orderReference">BOITHABK-XXXX</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="associations-section">
+        <h3>Our Esteemed Associations & Partners</h3>
+        <div class="associations-grid">
+          <div class="association-item">
+            <img
+              src="./images/ABSA.jpg"
+              alt="ABSA Bank"
+              class="association-logo"
+            />
+            <span class="association-name">ABSA Bank</span>
+          </div>
+          <div class="association-item">
+            <img
+              src="./images/Ford.jpg"
+              alt="Ford Motors"
+              class="association-logo"
+            />
+            <span class="association-name">Ford Motors</span>
+          </div>
+          <div class="association-item">
+            <img
+              src="./images/Afrimat-Logo.jpg"
+              alt="Afrimat"
+              class="association-logo"
+            />
+            <span class="association-name">Afrimat</span>
+          </div>
+        </div>
+      </div>
+
+      <p>© 2025 BOITHA HOLDINGS | Leadership is believing in people</p>
+
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/boisbeautyspace"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow us on Instagram"
+          >Instagram</a
+        >
+        <a href="#" aria-label="Visit our Facebook page">Facebook</a>
+        <a href="#" aria-label="Follow us on TikTok">TikTok</a>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/author.js"></script>
+  </body>
+</html>

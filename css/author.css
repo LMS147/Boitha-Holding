@@ -1,0 +1,159 @@
+/* author.css - Author Page Specific Styles */
+.book-banner {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.book-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.book-cover-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.book-cover-container img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 3px solid #1a237e;
+}
+
+.book-purchase-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.book-purchase-button .btn-book {
+  font-size: 18px;
+  padding: 15px 40px;
+  width: auto;
+}
+
+/* Book Purchase Form Specific */
+.purchase-form {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.purchase-form h4 {
+  margin: 30px 0 15px;
+  color: #1a237e;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 30px;
+}
+
+.total-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.total-box strong {
+  font-size: 26px;
+  color: #dc143c;
+}
+
+.bank-box {
+  display: none;
+  background: #f1f3f6;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.checkbox label {
+  font-size: 14px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background: #1a237e;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #151b60;
+}
+#bookPurchaseForm {
+  margin-top: 40px;
+}
+
+#customQuantityGroup {
+  transition: all 0.3s ease;
+}
+
+#bookTotalAmount {
+  color: #dc143c;
+  font-size: 28px;
+}
+
+/* Payment Method Sections */
+#bankTransferDetails {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Author Page Specific Responsive */
+@media (max-width: 768px) {
+  .book-cover-container img {
+    max-width: 250px;
+  }
+
+  .book-purchase-button .btn-book {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-cover-container img {
+    max-width: 200px;
+  }
+  .purchase-form {
+    padding: 25px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

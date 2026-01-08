@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Services - BOITHA HOLDINGS | Leadership Coaching & Motivational Speaking
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional leadership coaching, motivational speaking, corporate training, team building, and wellness programs offered by BOITHA HOLDINGS."
+    />
+    <meta
+      name="keywords"
+      content="leadership coaching services, motivational speaking, corporate training, team building workshops, wellness programs"
+    />
+    <meta name="author" content="Lerato Boitha" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="header-left">
+          <img
+            src="./images/logo.jpg"
+            alt="Boitha Holdings Logo"
+            class="header-logo"
+          />
+        </div>
+
+        <div class="header-center">
+          <h1>BOITHA HOLDINGS</h1>
+          <p>Transforming Minds, Changing Lives</p>
+        </div>
+
+        <div class="header-right">
+          <img
+            src="./images/ICAN.jpeg"
+            alt="ICAN Certification"
+            class="header-cert"
+          />
+        </div>
+      </div>
+    </header>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav>
+      <ul id="navigation">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./services.html" class="active">Services</a></li>
+        <li><a href="./author.html">Book</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>SERVICES OFFERED</h2>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>MC & Motivational Speaking</h3>
+            <p>
+              Professional MC services and powerful motivational talks that
+              inspire action and transform mindsets. Perfect for corporate
+              events, conferences, and special occasions.
+            </p>
+            <button class="btn-book" data-service="MC & Motivational Speaking">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <h3>Leadership & Team Building</h3>
+            <p>
+              Develop strong leaders and cohesive teams through interactive
+              workshops and strategic training programs designed to enhance
+              collaboration and performance.
+            </p>
+            <button class="btn-book" data-service="Leadership & Team Building">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <h3>Coaching and Mentoring</h3>
+            <p>
+              One-on-one personalized coaching sessions to unlock potential,
+              overcome challenges, and achieve personal and professional goals.
+            </p>
+            <button class="btn-book" data-service="Coaching and Mentoring">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <h3>Wellness in the Workplace</h3>
+            <p>
+              Comprehensive wellness programs that promote mental health,
+              work-life balance, and overall employee wellbeing for a thriving
+              workplace culture.
+            </p>
+            <button class="btn-book" data-service="Wellness in the Workplace">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <h3>Corporate Keynote Speaker</h3>
+            <p>
+              Engaging keynote addresses that captivate audiences and deliver
+              powerful messages on leadership, transformation, and success.
+            </p>
+            <button class="btn-book" data-service="Corporate Keynote Speaker">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <h3>Public Speaking Training</h3>
+            <p>
+              Uplifting and transformative speaking engagements that motivate
+              individuals to overcome obstacles in public speaking.It is
+              customised for children and adults.We run online and face-face
+              classes for your convenience.
+            </p>
+            <button class="btn-book" data-service="Inspirational Speaker">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div id="bookingForm" class="booking-form">
+          <h3 style="color: #1a237e; margin-bottom: 30px">
+            Book <span id="serviceName"></span>
+          </h3>
+          <form id="bookingFormElement" onsubmit="submitBooking(event)">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company/Organization</label>
+              <input type="text" id="company" />
+            </div>
+
+            <div class="form-group">
+              <label for="eventDate">Preferred Event Date *</label>
+              <input type="date" id="eventDate" required />
+            </div>
+
+            <div class="form-group">
+              <label for="eventType">Event Type *</label>
+              <select id="eventType" required>
+                <option value="">Select event type</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="conference">Conference</option>
+                <option value="workshop">Workshop</option>
+                <option value="seminar">Seminar</option>
+                <option value="training">Training Session</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="attendees">Expected Number of Attendees</label>
+              <input type="number" id="attendees" min="1" />
+            </div>
+
+            <div class="form-group">
+              <label for="location">Event Location *</label>
+              <input type="text" id="location" required />
+            </div>
+
+            <div class="form-group">
+              <label for="details">Additional Details</label>
+              <textarea
+                id="details"
+                placeholder="Please provide any additional information about your event..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Submit Booking Request
+            </button>
+            <button
+              type="button"
+              class="btn-cancel"
+              onclick="hideBookingForm()"
+            >
+              Cancel
+            </button>
+          </form>
+
+          <div id="successMessage" class="success-message">
+            <strong>Thank you for your booking request!</strong>
+            <p>
+              Your request has been received. Lerato will contact you shortly to
+              confirm the details.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="associations-section">
+        <h3>Our Esteemed Associations & Partners</h3>
+        <div class="associations-grid">
+          <div class="association-item">
+            <img
+              src="./images/ABSA.jpg"
+              alt="ABSA Bank"
+              class="association-logo"
+            />
+            <span class="association-name">ABSA Bank</span>
+          </div>
+          <div class="association-item">
+            <img
+              src="./images/Ford.jpg"
+              alt="Ford Motors"
+              class="association-logo"
+            />
+            <span class="association-name">Ford Motors</span>
+          </div>
+          <div class="association-item">
+            <img
+              src="./images/Afrimat-Logo.jpg"
+              alt="Afrimat"
+              class="association-logo"
+            />
+            <span class="association-name">Afrimat</span>
+          </div>
+        </div>
+      </div>
+
+      <p>© 2025 BOITHA HOLDINGS | Leadership is believing in people</p>
+
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/boisbeautyspace"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow us on Instagram"
+          >Instagram</a
+        >
+        <a href="#" aria-label="Visit our Facebook page">Facebook</a>
+        <a href="#" aria-label="Follow us on TikTok">TikTok</a>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/services.js"></script>
+  </body>
+</html>
