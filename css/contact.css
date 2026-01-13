@@ -111,22 +111,45 @@
   border: 1px solid #c62828;
 }
 
-/* ===== CONTACT INFO - ISS STYLE ===== */
+/* CONTACT SECTION */
+.contact-section {
+  padding: 80px 20px;
+  background: #f4f6f9;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* CARD */
+.card {
+  max-width: 1200px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* CONTACT INFO GRID */
 .contact-info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
-/* Contact Card */
+/* CONTACT ITEM */
 .contact-item {
-  padding: 24px 22px;
+  padding: 24px;
   background: #ffffff;
-  border-radius: 6px;
   border-left: 4px solid #1a237e;
+  border-radius: 6px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-item:hover {
@@ -134,29 +157,64 @@
   box-shadow: 0 10px 25px rgba(26, 35, 126, 0.15);
 }
 
-/* Headings */
 .contact-item strong {
   color: #1a237e;
   display: block;
   margin-bottom: 8px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
 }
 
-/* Text Content */
 .contact-item p,
-.contact-item div {
-  color: #555;
-  font-size: 14px;
-  line-height: 1.7;
-  margin: 0;
-}
-
 .contact-item span {
   color: #1f2933;
-  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* MAP SECTION */
+.map-heading {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 30px;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.map-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.map-card h4 {
+  padding: 14px;
+  font-size: 14px;
+  background: #1a237e;
+  color: #ffffff;
+  text-align: center;
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 260px;
+  border: 0;
+}
+
+/* FOOTER TEXT */
+.contact-footer {
+  text-align: center;
+  color: #555;
+  margin-top: 30px;
+  font-size: 14px;
 }
 
 /* ===== CONTACT CTA ===== */
@@ -211,5 +269,8 @@
 
   .contact-cta p {
     font-size: 15px;
+  }
+  .card {
+    padding: 30px 20px;
   }
 }
