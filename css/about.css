@@ -204,7 +204,7 @@
   max-height: 60px;
   object-fit: contain;
   margin-bottom: 15px;
-  filter: grayscale(100%);
+  filter: grayscale(10%);
   transition: filter 0.3s ease;
 }
 
